@@ -1,0 +1,7 @@
+name = "nextchair"
+main = "worker.js"
+compatibility_date = "2026-09-04"
+
+routes = [
+  { pattern = "businessdatagurus.com/next-chair*", zone_name = "businessdatagurus.com" }
+]
