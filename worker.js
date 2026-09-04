@@ -40,7 +40,7 @@ function buildResponse(body, status = 200) {
     status,
     headers: {
       "content-type": "text/html; charset=UTF-8",
-      "cache-control": "public, max-age=300"
+      "cache-control": status >= 400 ? "no-store" : "public, max-age=300"
     }
   });
 }
