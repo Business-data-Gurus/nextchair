@@ -31,7 +31,7 @@ const LANDING_HTML = `<!doctype html>
     </style>
   </head>
   <body>
-    <h1>Your barbershop needs more than an instagram bio</h1>
+    <h1>Your barbershop needs more than an Instagram bio</h1>
   </body>
 </html>`;
 
@@ -53,10 +53,6 @@ export default {
       return buildResponse(LANDING_HTML);
     }
 
-    if (pathname.startsWith("/next-chair-")) {
-      return buildResponse("<h1>Page not found</h1>", 404);
-    }
-
-    return buildResponse("<h1>Not found</h1>", 404);
+    return buildResponse("<h1>Page not found</h1>", 404);
   }
 };
